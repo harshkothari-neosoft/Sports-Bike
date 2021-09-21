@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Contact us Page</title>
+</head>
+<body>
+    <main class="container-fluid">
+        <!-- NavBar Start -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+          
+            <a class="navbar-brand font-weight-bold" href="index.html">Speed World</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="container">
+            <div class="collapse navbar-collapse text-center" id="navbarNavAltMarkup">
+              <div class="navbar-nav mx-auto">
+                <a class="nav-item nav-link text-light" href="index.html">Home</a>
+                <a class="nav-item nav-link text-light" href="bikes.html">Bikes</a>
+                <a class="nav-item nav-link text-light active" href="contact.html">contact Us</a>
+              </div>
+                <div >
+                    <ul class="navbar-nav ml-auto">
+                        <li><a href="login.html" class="text-light nav-link"><i class="fas fa-lock mr-1"></i> Login</a></li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+        </nav>
+        <!-- Navbar End -->
+
+        <!-- Contact Us start -->
+        <div class="pt-5">
+          <div class="text-center font-weight-bold pt-5">
+            <h3>Complaint/Feedback Form</h3>
+          </div>
+          <div class="container">
+            <form action="index.html" method="POST" onsubmit="return validation()">
+                <div class="form-group">
+                    <label><b>Name</b></label>
+                    <input type="text" id="name" placeholder="Enter your name" class="form-control" onblur="function1()">
+                    <span id="error1"></span>
+                </div>
+                <div class="form-group">
+                    <label><b>Email</b></label>
+                    <input type="text" id="mail" placeholder="Enter your email-id" class="form-control" onblur="function2()">
+                    <span id="error2"></span>
+                </div>
+                <div class="form-group">
+                    <label><b>Contact No.</b></label>
+                    <input type="text" id="contact" placeholder="Enter your Contact No." class="form-control" onblur="function3()">
+                    <span id="error3"></span>
+                </div>
+                <div class="form-group">
+                    <label><b>Gender &nbsp;</b>
+                    <input type="radio" id="male" name="gender" value="male"> Male &nbsp;
+                    <input type="radio" id="female" name="gender" value="female"> Female </label>
+                </div>
+                <div class="form-group">
+                    <label><b>Feedback/Complaint</b></label>
+                    <textarea name="feedback" id="feedback" cols="30" rows="10" class="form-control" placeholder="Enter your feedback/complaint" onblur="function4()"></textarea>
+                    <span id="error4"></span>
+                </div>
+                <button type="submit" class="btn btn-success">Submit</button>
+            </form>
+          </div>
+          </div>
+          <!-- Contact Us end -->
+
+             <!-- Footer Start -->
+    <div class="pt-4">
+        <footer class="page-footer font-small bg-dark text-white pt-4">
+    
+        <div class="container text-center text-md-left">
+      
+          <div class="row">
+      
+            <div class="col-md-4 mx-auto">
+              <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Speed World</h5>
+              <p>A best place where you can easily find all information of sports bike</p>
+            </div>
+      
+            <hr class="clearfix w-100 d-md-none">
+      
+            <div class="col-md-2 mx-auto">
+              <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="index.html" class="text-white">Home</a>
+                </li>
+                <li>
+                  <a href="bikes.html" class="text-white">Bikes</a>
+                </li>
+                <li>
+                  <a href="contact.html" class="text-white">Contact us</a>
+                </li>
+              </ul>
+            </div>
+      
+            <hr class="clearfix w-100 d-md-none">
+      
+            <div class="col-md-4 mx-auto">
+      
+              <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Contact</h5>
+      
+              <ul class="list-unstyled">
+                <li>
+                  <span><i class="fas fa-home mr-2"></i> Ring Road, Indore-452001</span>
+                </li>
+                <li>
+                 <span><i class="fas fa-envelope mr-2"></i> Speedworld@gmail.com</span>
+                </li>
+                <li>
+                    <span><i class="fas fa-phone mr-2"></i> +91-9876543210</span>
+                </li>
+                <li>
+                    <span><i class="fas fa-fax mr-2"></i> +0731-2345678</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      
+        <hr>
+      
+        <ul class="list-unstyled list-inline text-center py-2">
+          <li class="list-inline-item">
+            <h5 class="mb-1">Register for free</h5>
+          </li>
+          <li class="list-inline-item">
+            <a href="signup.html" class="btn btn-danger btn-rounded">Sign up!</a>
+          </li>
+        </ul>
+      
+        <hr>
+    
+        <ul class="list-unstyled list-inline text-center">
+          <li class="list-inline-item">
+            <a class="mx-1">
+              <i class="fab fa-facebook-f"> </i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a class="mx-1">
+              <i class="fab fa-twitter"> </i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a class="mx-1">
+              <i class="fab fa-google-plus-g"> </i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a class="mx-1">
+              <i class="fab fa-linkedin-in"> </i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a class="mx-1">
+              <i class="fab fa-dribbble"> </i>
+            </a>
+          </li>
+        </ul>
+      
+        <div class="footer-copyright text-center py-3">Copyright © 2021 Designed by <span class="text-info">Harsh</span> - All Rights Reserved.</div>
+      
+      </footer>
+      </div>
+      <!-- Footer End -->
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="Javascript/contact.js"></script>
+</body>
+</html>
