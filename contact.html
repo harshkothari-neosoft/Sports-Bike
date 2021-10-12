@@ -10,6 +10,15 @@
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
     crossorigin="anonymous"
     />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(function(){
+        $('#header').load('header.html');
+      });
+      $(function(){
+        $('#footer').load('footer.html');
+      });
+    </script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <link rel="stylesheet" href="CSS/style.css">
     <title>Contact us Page</title>
@@ -17,7 +26,7 @@
 <body>
     <main class="container-fluid">
         <!-- NavBar Start -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
           
             <a class="navbar-brand font-weight-bold" href="index.html">Speed World</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,7 +46,8 @@
                 </div>
             </div>
             </div>
-        </nav>
+        </nav> -->
+        <div id="header"></div>
         <!-- Navbar End -->
 
         <!-- Contact Us start -->
@@ -79,7 +89,9 @@
           <!-- Contact Us end -->
 
              <!-- Footer Start -->
-    <div class="pt-4">
+
+             <div id="footer"></div>
+    <!-- <div class="pt-4">
         <footer class="page-footer font-small bg-dark text-white pt-4">
     
         <div class="container text-center text-md-left">
@@ -119,13 +131,13 @@
                   <span><i class="fas fa-home mr-2"></i> Ring Road, Indore-452001</span>
                 </li>
                 <li>
-                 <span><i class="fas fa-envelope mr-2"></i> Speedworld@gmail.com</span>
+                 <span><i class="fas fa-envelope mr-2"></i><a class="text-white" href="mailto:Speedworld@gmail.com">Speedworld@gmail.com</a></span>
                 </li>
                 <li>
-                    <span><i class="fas fa-phone mr-2"></i> +91-9876543210</span>
+                    <span><i class="fas fa-phone mr-2"></i><a class="text-white" href="tel:+91-9876543210">+91-9876543210</a> </span>
                 </li>
                 <li>
-                    <span><i class="fas fa-fax mr-2"></i> +0731-2345678</span>
+                    <span><i class="fas fa-fax mr-2"></i><a class="text-white" href="tel:+0731-2345678">+0731-2345678</a> </span>
                 </li>
               </ul>
             </div>
@@ -176,11 +188,11 @@
         <div class="footer-copyright text-center py-3">Copyright © 2021 Designed by <span class="text-info">Harsh</span> - All Rights Reserved.</div>
       
       </footer>
-      </div>
+      </div> -->
       <!-- Footer End -->
     </main>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="Javascript/contact.js"></script>
